@@ -1,0 +1,194 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Segoe UI',sans-serif;
+}
+
+body{
+    background:#f4f6f9;
+    padding:20px;
+}
+
+.container{
+    max-width:1100px;
+    margin:auto;
+    display:flex;
+    background:#fff;
+    border-radius:12px;
+    overflow:hidden;
+    box-shadow:0 10px 30px rgba(0,0,0,0.1);
+}
+
+/* LEFT SIDE */
+
+.left{
+    width:35%;
+    background:#1f2937;
+    color:#fff;
+    padding:35px 25px;
+}
+
+.profile{
+    text-align:center;
+    margin-bottom:30px;
+}
+
+.profile img{
+    width:180px;
+    height:220px;
+    object-fit:cover;
+    border-radius:12px;
+    border:4px solid white;
+    box-shadow:0 5px 15px rgba(0,0,0,0.3);
+}
+
+.left section{
+    margin-bottom:30px;
+}
+
+.left h3{
+    margin-bottom:15px;
+    padding-bottom:8px;
+    border-bottom:2px solid rgba(255,255,255,0.2);
+}
+
+.left ul{
+    list-style:none;
+}
+
+.left ul li{
+    margin-bottom:10px;
+    line-height:1.6;
+}
+
+/* SKILLS */
+
+.skill{
+    margin-bottom:15px;
+}
+
+.skill span{
+    display:block;
+    margin-bottom:5px;
+}
+
+.bar{
+    width:100%;
+    height:8px;
+    background:#475569;
+    border-radius:20px;
+}
+
+.fill{
+    height:100%;
+    background:#3b82f6;
+    border-radius:20px;
+}
+
+.html{width:90%;}
+.css{width:85%;}
+.js{width:75%;}
+.cpp{width:80%;}
+.java{width:70%;}
+.python{width:75%;}
+.mysql{width:80%;}
+
+/* RIGHT SIDE */
+
+.right{
+    width:65%;
+    padding:40px;
+}
+
+header{
+    margin-bottom:35px;
+}
+
+header h1{
+    font-size:38px;
+    color:#111827;
+    letter-spacing:2px;
+}
+
+header h2{
+    color:#2563eb;
+    font-size:20px;
+    font-weight:500;
+    margin-top:8px;
+}
+
+.section{
+    margin-bottom:30px;
+}
+
+.section h3{
+    color:#2563eb;
+    border-left:5px solid #2563eb;
+    padding-left:10px;
+    margin-bottom:15px;
+}
+
+.section p{
+    line-height:1.8;
+    color:#444;
+}
+
+.section ul{
+    padding-left:20px;
+}
+
+.section li{
+    margin-bottom:10px;
+    line-height:1.7;
+}
+
+.timeline-item{
+    margin-bottom:20px;
+}
+
+.timeline-item h4{
+    color:#111827;
+    margin-bottom:5px;
+}
+
+.timeline-item span{
+    color:#6b7280;
+    font-size:14px;
+}
+
+/* RESPONSIVE */
+
+@media (max-width:768px){
+
+    body{
+        padding:0;
+    }
+
+    .container{
+        flex-direction:column;
+        border-radius:0;
+    }
+
+    .left,
+    .right{
+        width:100%;
+    }
+
+    .right{
+        padding:25px;
+    }
+
+    header h1{
+        font-size:28px;
+    }
+
+    header h2{
+        font-size:16px;
+    }
+
+    .profile img{
+        width:150px;
+        height:190px;
+    }
+}
